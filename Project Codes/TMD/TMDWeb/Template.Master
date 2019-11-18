@@ -101,7 +101,12 @@
             margin-left: 10px;
         }
 
-        /* Below are for website responsiveness */
+        #cancerLogout, #stupidLogout {
+            color: white;
+            font-size: 20px;
+        }
+
+        /* Mainly for mobile width adjustment */
         @media only screen and (min-width: 768px) {
             #cancerNav ul, #stupidNav ul {
                 width: 250px;
@@ -113,6 +118,10 @@
         @media only screen and (max-width: 767px) {
             #cancerTitle, #stupidTitle {
                 margin-top: 10px;
+            }
+
+            #cancerLogout, #stupidLogout {
+                font-size: 14px;
             }
 
             #cancerNav, #stupidNav {
@@ -136,7 +145,7 @@
 
                 <ul class="nav list-unstyled ml-auto">
                     <li class="nav-item">
-                        <a href="#" runat="server" onserverclick="logout_click" causesValidation="false" style="color: white; font-size: 19px">Logout <i class="fa fa-sign-out fa-fw" ></i></a>
+                        <a href="#" runat="server" id="cancerLogout" onserverclick="logout_click" causesValidation="false">Logout <i class="fa fa-sign-out fa-fw" ></i></a>
                     </li>
                 </ul>
             </nav>
@@ -197,7 +206,7 @@
 
                 <ul class="nav list-unstyled ml-auto">
                     <li class="nav-item">
-                        <a href="#" runat="server" onserverclick="logout_click" causesValidation="false" style="color: white; font-size: 19px">Logout <i class="fa fa-sign-out fa-fw" ></i></a>
+                        <a href="#" runat="server" id="stupidLogout" onserverclick="logout_click" causesValidation="false">Logout <i class="fa fa-sign-out fa-fw" ></i></a>
                     </li>
                 </ul>
             </nav>
