@@ -59,6 +59,8 @@
 
         #videoDog {
              object-fit: cover;
+             width: 100px;
+             height: 100px;
         }
         #vidDiv {
 
@@ -107,6 +109,7 @@
                 max-width: 80px;
             }
         }
+
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -200,13 +203,13 @@
         </div>
     </div>        
        
-    <br />
-
     <div class="row">
         <div class="col-12">
-            <asp:Button ID="btnNewAdv" class="btn btn-primary nextBtn pull-right" runat="server" Text="New Advertisement" OnClick="btnNew_Advert" />
+            <asp:Button ID="btnNewAdv" class="btn btn-primary float-right" runat="server" Text="New Advertisement" OnClick="btnNew_Advert" />
         </div>
     </div>
+
+    <br />
 
     <div id="demo" class="collapse">
         <div class="row">
@@ -256,27 +259,27 @@
         <div id="divImage" style="padding:0px">
             <span class="close" id="imageCloser" onclick="HideDiv()">&times;</span>
             <img id="imgLoader" alt="" src="images/loader.gif" />
-            <img id="imgFull" alt="" src="" style="display: none; height:100%; width:100%;object-fit: cover;" />
+            <img id="imgFull" alt="" src="" style="display: none; height:100%; width:100%; object-fit: cover;" />
         </div>
 
-        <div runat="server" class="alert alert-success" id="alertSuccessCreate" visible="False">
-            <strong>Successfully Created Advertisement</strong> 
+        <div runat="server" class="alert alert-success" id="alertSuccessCreate" visible="False" style="width: 100%; margin: 0px 0px 20px 0px">
+            <strong>Successfully created advertisement!</strong> 
             <asp:Label runat="server" ID="Label2"></asp:Label>
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>
         </div>
 
-        <div runat="server" class="alert alert-success" id="alertSuccessUpdate" visible="False">
-            <strong>Successfully Updated Advertisement</strong> 
+        <div runat="server" class="alert alert-success" id="alertSuccessUpdate" visible="False" style="width: 100%; margin: 0px 0px 20px 0px">
+            <strong>Successfully updated advertisement!</strong> 
             <asp:Label runat="server" ID="msgSuccess"></asp:Label>
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>
         </div>
 
-        <div runat="server" class="alert alert-success" id="alertSuccessDelete" visible="False">
-            <strong>Success</strong> 
+        <div runat="server" class="alert alert-success" id="alertSuccessDelete" visible="False" style="width: 100%; margin: 0px 0px 20px 0px">
+            <strong>Success!</strong> 
             <asp:Label runat="server" ID="Label3"></asp:Label>
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
@@ -285,9 +288,9 @@
 
         <div id="all" runat="server">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-12">
                     <div class="table-responsive">
-                        <%--                        <table class="table table-striped table-bordered table-hover" style="width: 100%">--%>
+                        <%--<table class="table table-striped table-bordered table-hover" style="width: 100%">--%>
                         <asp:UpdatePanel id="diulei" runat="server">
                         <ContentTemplate>
                         <asp:GridView ID="GridView1" ClientIdMode="Static" SortedAscendingHeaderStyle-CssClass="ascending" SortedDescendingHeaderStyle-CssClass="descending" CssClass="table table-striped table-bordered table-hover" 
@@ -364,10 +367,6 @@
                                     <HeaderStyle HorizontalAlign="Center" Wrap="False" />
                                     <ItemStyle width="5px" HorizontalAlign="Center" Wrap="True" VerticalAlign="Middle" />
                                 </asp:templatefield>
-
-                                 
-
-
                             </Columns>
                             <EditRowStyle HorizontalAlign="Center" CssClass="GridViewEditRow" />
                             <EmptyDataRowStyle HorizontalAlign="Center" />

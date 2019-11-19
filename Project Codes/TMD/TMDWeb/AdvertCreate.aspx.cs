@@ -125,22 +125,22 @@ namespace targeted_marketing_display
             if (Literal1.Text == "" || startDateTB.Text == ""
                    || endDateTB.Text == "" || adCategoryTB.Text == "" || billboardDisplayTB.Text == "" || getvalue == "")
             {
-                alertWarning.Visible = true;
+                //alertWarning.Visible = true;
 
-                warningLocation.Text = "Please ensure you have filled in all required fields";
+                //warningLocation.Text = "Please ensure you have filled in all required fields";
             }
             //if never agree to terms and conditions,display warning
             //unused codes
             else if (CheckBox1.Checked == false)
             {
-                alertWarning.Visible = true;
+                //alertWarning.Visible = true;
 
-                warningLocation.Text = "Please agree with T&C";
+                //warningLocation.Text = "Please agree with T&C";
             }
 
             else
             {
-                alertWarning.Visible = false;
+                //alertWarning.Visible = false;
 
                 DateTime aDate = DateTime.Now;
                 imagelink = "Images/" + Literal1.Text;
@@ -333,8 +333,8 @@ namespace targeted_marketing_display
                 {
                     CheckBoxList2.Items[i].Selected = false;
                 }
-                alertWarning.Visible = false;
-                alertSuccess.Visible = true;
+                //alertWarning.Visible = false;
+                //alertSuccess.Visible = true;
                 Session["AdvertCreate"] = 2;
                 Response.Redirect("AdvertList.aspx");
             }
@@ -396,7 +396,7 @@ namespace targeted_marketing_display
             {
                 billboardDisplayTB.Text = (billboardDisplayTB.Text).Substring(1); 
             }
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "Pop", "hideModal();$('.modal-backdrop').remove();", true);
+            ScriptManager.RegisterStartupScript(this, this.GetType(), "Pop", "hideModal();", true);
         }
 
         //protected void btnRun_Click(object sender, EventArgs e)

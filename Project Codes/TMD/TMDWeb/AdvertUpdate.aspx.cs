@@ -479,8 +479,8 @@ namespace targeted_marketing_display
                 {
                     CheckBoxList2.Items[i].Selected = false;
                 }
-                alertWarning.Visible = false;
-                alertSuccess.Visible = true;
+                //alertWarning.Visible = false;
+                //alertSuccess.Visible = true;
                 Session["AdvertUpdate"] = 2;
                 Response.Redirect("AdvertList.aspx");
             }

@@ -154,7 +154,7 @@
             <div class="navbar-default sidebar" role="navigation" style="height: 100%; margin-top: 0">
             <!-- never ever delete, i don't understand -->
 
-                <nav class="navbar-nav" role="navigation" style="background-color: #435058; height: 100%">
+                <nav class="navbar-nav" role="navigation" style="background-color: #435058; height: 170%">
                     <div runat="server" class="sidebar-nav navbar-collapse" id="cancerNav">
                         <ul class="nav flex-column list-unstyled">
                             <li class="p-3" style="text-align: center; background-color: #dcf763;">
@@ -215,7 +215,7 @@
             <div class="navbar-default sidebar" role="navigation" style="height: 100%; margin-top: 0">
             <!-- never ever delete, i don't understand -->
 
-                <nav class="navbar-nav" role="navigation" style="background-color: #435058; height: 100%">
+                <nav class="navbar-nav" role="navigation" style="background-color: #435058; height: 170%">
                     <div runat="server" class="collapse navbar-collapse" id="stupidNav">
                         <ul class="nav flex-column list-unstyled">
                             <li class="p-3" style="text-align: center; background-color: #dcf763;">

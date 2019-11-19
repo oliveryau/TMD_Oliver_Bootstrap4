@@ -67,7 +67,7 @@ namespace targeted_marketing_display
                     imgLogo.Visible = false;
                 }
 
-                headerName.InnerText = AdvertObj.Name.ToString();
+                //headerName.InnerText = AdvertObj.Name.ToString();
                 AdNameLabel.Text = "for " + AdvertObj.Name.ToString();
                 AdNameLiteral.Text = AdvertObj.Name.ToString();
                 ItemTypeLiteral.Text = AdvertObj.ItemType.ToString();
