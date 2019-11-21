@@ -163,7 +163,7 @@
                 <div class="input-group custom-search-form">
                     <div style="float: left">
                         <p class="input-group">
-                        <asp:TextBox ID="txtSearch" class="form-control" runat="server" placeholder="Search..."></asp:TextBox>
+                        <asp:TextBox ID="txtSearch" class="form-control" runat="server" placeholder="Search..." AutoComplete="off"></asp:TextBox>
                         <%--<input type="submit" id="btSubmit" runat="server" />--%>
                         <span class="input-group-btn" >
                             <asp:LinkButton runat="server" class="btn btn-default" ID="btnRun" Text="<i class='fa fa-search'></i>" OnClick="btnRun_Click"/>
@@ -211,7 +211,7 @@
             <EditRowStyle HorizontalAlign="Center" CssClass="GridViewEditRow" BackColor="#999999" />
             <EmptyDataRowStyle HorizontalAlign="Center" />
             <FooterStyle BackColor="#CCCCCC" HorizontalAlign="Center" Font-Bold="True" />
-            <HeaderStyle BackColor="Black" Font-Bold="True" ForeColor="White" HorizontalAlign="Center" />
+            <HeaderStyle BackColor="#999999" Font-Bold="True" ForeColor="White" HorizontalAlign="Center" />
             <PagerStyle BackColor="#999999"  ForeColor="Black" HorizontalAlign="left"  />
             <RowStyle Height="20px" Width="30px" HorizontalAlign="Center" BackColor="#F7F6F3" />
             <SelectedRowStyle BackColor="#000099" Font-Bold="True" ForeColor="White" HorizontalAlign="Center" />

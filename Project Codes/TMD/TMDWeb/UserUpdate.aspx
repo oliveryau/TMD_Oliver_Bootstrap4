@@ -38,7 +38,7 @@
                 <div class="form-group">
                     <label>Name: </label>
                     <label style="color: red">*</label>
-                    <asp:TextBox class="form-control" ID="tbName" placeholder="Enter name" runat="server"></asp:TextBox>&nbsp;
+                    <asp:TextBox class="form-control" ID="tbName" placeholder="Enter name" runat="server" AutoComplete="off"></asp:TextBox>&nbsp;
                     <asp:RequiredFieldValidator ID="rfvName" runat="server" ControlToValidate="tbName" Display="Dynamic" ErrorMessage="Please enter name" ForeColor="Red"></asp:RequiredFieldValidator>
                     <asp:RegularExpressionValidator ID="revName" runat="server" ControlToValidate="tbName" Display="Dynamic" ErrorMessage="Please enter a valid name" ValidationExpression="^[a-zA-Z\s]+$" ForeColor="Red"></asp:RegularExpressionValidator>
                 </div>
@@ -48,7 +48,7 @@
                 <div class="form-group">
                     <label>Contact Number: </label>
                     <label style="color: red">*</label>
-                    <asp:TextBox class="form-control" ID="tbContact" placeholder="Enter contact no." runat="server"></asp:TextBox>&nbsp;
+                    <asp:TextBox class="form-control" ID="tbContact" placeholder="Enter contact no." runat="server" AutoComplete="off"></asp:TextBox>&nbsp;
                     <asp:RequiredFieldValidator ID="rfvConNo" runat="server" ControlToValidate="tbContact" Display="Dynamic" ErrorMessage="Please enter contact number" ForeColor="Red"></asp:RequiredFieldValidator>
                     <asp:RegularExpressionValidator ID="revConNo" runat="server" ControlToValidate="tbContact" Display="Dynamic" ErrorMessage="Please enter a valid contact number (8-digits starting with the number 8/9)" ValidationExpression="^[89]\d{7}$" ForeColor="Red"></asp:RegularExpressionValidator>
                 </div>

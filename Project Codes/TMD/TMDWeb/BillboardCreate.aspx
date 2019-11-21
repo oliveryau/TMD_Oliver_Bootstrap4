@@ -172,7 +172,7 @@
                 <div class="form-group">
                     <label>Billboard Code: </label>
                     <label style="color: red">*</label>
-                    <asp:TextBox class="form-control" ID="BBLocationCode" placeholder="Enter billboard code" runat="server" ClientIDMode="Static" MaxLength="10"></asp:TextBox>&nbsp;
+                    <asp:TextBox class="form-control" ID="BBLocationCode" placeholder="Enter billboard code" runat="server" ClientIDMode="Static" MaxLength="10" AutoComplete="off"></asp:TextBox>&nbsp;
                     <asp:RequiredFieldValidator ID="rfvBillboardCode" runat="server" ControlToValidate="BBLocationCode" Display="Dynamic" ErrorMessage="Please enter a billboard code" ForeColor="Red"></asp:RequiredFieldValidator>
                 </div>
             </div>  
@@ -184,7 +184,7 @@
                     <label>Address Line 1: </label>
                     <label style="color: red">*</label>
                     &nbsp;
-                <asp:TextBox class="form-control" ID="BBAddLn1" placeholder="Enter address line 1" runat="server" ClientIDMode="Static" MaxLength="50"></asp:TextBox>&nbsp;
+                <asp:TextBox class="form-control" ID="BBAddLn1" placeholder="Enter address line 1" runat="server" ClientIDMode="Static" MaxLength="50" AutoComplete="off"></asp:TextBox>&nbsp;
                 <asp:RequiredFieldValidator ID="rfvAddressLine1" runat="server" ControlToValidate="BBAddLn1" Display="Dynamic" ErrorMessage="Please enter an address" ForeColor="Red"></asp:RequiredFieldValidator>
                 </div>
             </div>
@@ -192,7 +192,7 @@
             <div class="col-12 col-md-6">
                 <div class="form-group">
                     <label>Address Line 2 (Optional): </label> 
-                    <asp:TextBox class="form-control" ID="BBAddLn2" placeholder="Enter address line 2" runat="server" ClientIDMode="Static" MaxLength="50"></asp:TextBox>
+                    <asp:TextBox class="form-control" ID="BBAddLn2" placeholder="Enter address line 2" runat="server" ClientIDMode="Static" MaxLength="50" AutoComplete="off"></asp:TextBox>
                     &nbsp;
                 </div>
             </div>
@@ -203,7 +203,7 @@
                 <div class="form-group">
                     <label>City: </label>
                     <label style="color: red">*</label>
-                    <asp:TextBox class="form-control" ID="BBCity" placeholder="Enter city" runat="server" ClientIDMode="Static" MaxLength="20"></asp:TextBox>&nbsp;
+                    <asp:TextBox class="form-control" ID="BBCity" placeholder="Enter city" runat="server" ClientIDMode="Static" MaxLength="20" AutoComplete="off"></asp:TextBox>&nbsp;
                     <asp:RequiredFieldValidator ID="rfvCity" runat="server" ControlToValidate="BBCity" Display="Dynamic" ErrorMessage="Please enter a city" ForeColor="Red"></asp:RequiredFieldValidator>
                     <asp:RegularExpressionValidator ID="revCity" runat="server" ControlToValidate="BBCity" Display="Dynamic" ErrorMessage="Please enter a valid city" ValidationExpression="^[a-zA-Z]+(?:[\s-][a-zA-Z]+)*$" ForeColor="Red"></asp:RegularExpressionValidator>                
                 </div>
@@ -225,7 +225,7 @@
                 <div class="form-group">
                     <label>Latitude: </label>
                     <label style="color: red">*</label>
-                    <asp:TextBox class="form-control" ID="BBLatitude" placeholder="Enter latitude" runat="server" ClientIDMode="Static" MaxLength="50"></asp:TextBox>&nbsp;
+                    <asp:TextBox class="form-control" ID="BBLatitude" placeholder="Enter latitude" runat="server" ClientIDMode="Static" MaxLength="50" AutoComplete="off"></asp:TextBox>&nbsp;
                     <asp:RequiredFieldValidator ID="rfvLatitude" runat="server" ControlToValidate="BBLatitude" Display="Dynamic" ErrorMessage="Please enter a latitude" ForeColor="Red"></asp:RequiredFieldValidator>
                     <asp:RegularExpressionValidator ID="revLatitude" runat="server" ControlToValidate="BBLatitude" Display="Dynamic" ErrorMessage="Please enter a valid latitude" ValidationExpression="^(\-?\d+(\.\d+)?)" ForeColor="Red"></asp:RegularExpressionValidator>
                 </div>
@@ -234,7 +234,7 @@
                 <div class="form-group">
                     <label>Longtitude: </label>
                     <label style="color: red">*</label>
-                    <asp:TextBox class="form-control" ID="BBLongtitude" placeholder="Enter longtitude" runat="server" ClientIDMode="Static" MaxLength="50"></asp:TextBox>&nbsp;
+                    <asp:TextBox class="form-control" ID="BBLongtitude" placeholder="Enter longtitude" runat="server" ClientIDMode="Static" MaxLength="50" AutoComplete="off"></asp:TextBox>&nbsp;
                     <asp:RequiredFieldValidator ID="rfvLongitude" runat="server" ControlToValidate="BBLongtitude" Display="Dynamic" ErrorMessage="Please enter a longtitude" ForeColor="Red"></asp:RequiredFieldValidator>
                     <asp:RegularExpressionValidator ID="revLongtitude" runat="server" ControlToValidate="BBLongtitude" Display="Dynamic" ErrorMessage="Please enter a valid longtitude" ValidationExpression="^(\-?\d+(\.\d+)?)" ForeColor="Red"></asp:RegularExpressionValidator>                
                 </div>
@@ -246,7 +246,7 @@
                 <div class="form-group">
                     <label>Postal Code: </label>
                     <label style="color: red">*</label>
-                    <asp:TextBox class="form-control" ID="BBPostalCode" placeholder="Enter postal code" runat="server" ClientIDMode="Static" MaxLength="12"></asp:TextBox>&nbsp;
+                    <asp:TextBox class="form-control" ID="BBPostalCode" placeholder="Enter postal code" runat="server" ClientIDMode="Static" MaxLength="12" AutoComplete="off"></asp:TextBox>&nbsp;
                     <asp:RequiredFieldValidator ID="rfvPostalCode" runat="server" ControlToValidate="BBPostalCode" Display="Dynamic" ErrorMessage="Please enter a postal code" ForeColor="Red"></asp:RequiredFieldValidator>
                     <asp:RegularExpressionValidator ID="revPostalCode" runat="server" ControlToValidate="BBPostalCode" Display="Dynamic" ErrorMessage="Please enter a valid postal code" ValidationExpression="^\d+$" ForeColor="Red"></asp:RegularExpressionValidator>                            
                 </div>

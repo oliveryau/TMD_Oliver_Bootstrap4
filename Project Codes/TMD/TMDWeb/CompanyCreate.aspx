@@ -38,7 +38,7 @@
                 <div class="form-group">
                     <label>Company Name: </label>
                     <label style="color:red">*</label>
-                    <asp:TextBox class="form-control" ID="CoName" placeholder="Enter company name" runat="server" MaxLength="255"></asp:TextBox> &nbsp;
+                    <asp:TextBox class="form-control" ID="CoName" placeholder="Enter company name" runat="server" MaxLength="255" AutoComplete="off"></asp:TextBox> &nbsp;
                     <asp:RequiredFieldValidator ID="rfvCoName" runat="server" ControlToValidate="CoName" Display="Dynamic" ErrorMessage="Please enter company name" ForeColor="Red"></asp:RequiredFieldValidator>
                 </div>
             </div>

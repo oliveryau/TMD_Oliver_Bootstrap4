@@ -60,14 +60,14 @@
         </script>
 
         <div class="row">
-            <div class="col-lg-12">
+            <div class="col-12">
                 <h1 class="page-header">Users</h1>
             </div>
         </div>        
 
         <div class="row">
-            <div class="col-lg-12">
-                <asp:Button ID="btnNewUser" class="btn btn-primary nextBtn pull-right" runat="server" Text="New User" OnClick="btnNew_User" />
+            <div class="col-12">
+                <asp:Button ID="btnNewUser" class="btn btn-primary float-right" runat="server" Text="New User" OnClick="btnNew_User" />
             </div>
         </div>
 
@@ -78,7 +78,7 @@
                 <div class="input-group custom-search-form">
                     <div style="float: left">
                         <p class="input-group">
-                        <asp:TextBox ID="tbSearch" class="form-control" runat="server" placeholder="Search..."></asp:TextBox>
+                        <asp:TextBox ID="tbSearch" class="form-control" runat="server" placeholder="Search..."  AutoComplete="off"></asp:TextBox>
                         <%--<input type="submit" id="btSubmit" runat="server" />--%>
                         <span class="input-group-btn" >
                             <asp:LinkButton runat="server" class="btn btn-default" ID="btnRun" Text="<i class='fa fa-search'></i>"/>

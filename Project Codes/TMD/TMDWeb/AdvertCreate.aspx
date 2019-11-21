@@ -245,7 +245,7 @@
             <div class="col-12 col-md-6">
                 <div class="form-group">
                     <label>Duration (In seconds) - Only for video files: </label>&nbsp;
-                    <asp:TextBox Class="form-control" ID="videoDurationTB" runat="server" />                        
+                    <asp:TextBox Class="form-control" ID="videoDurationTB" runat="server" AutoComplete="off" />                        
                     <br />
                 </div>
             </div>
@@ -254,7 +254,7 @@
                 <div class="form-group">
                     <label>Name: </label>
                     <label style="color: red">*</label>
-                    <asp:TextBox Class="form-control" ID="adNameTB" runat="server" AutoCompleteType="Disabled" autocomplete="off" MaxLength="255"></asp:TextBox>
+                    <asp:TextBox Class="form-control" ID="adNameTB" runat="server" autocomplete="off" MaxLength="255"></asp:TextBox>
                     <asp:RequiredFieldValidator runat="server" id="rfvName" controltovalidate="adNameTB" errormessage="Please enter advertisement name" ForeColor="Red"></asp:RequiredFieldValidator>
                     <br />
                 </div>

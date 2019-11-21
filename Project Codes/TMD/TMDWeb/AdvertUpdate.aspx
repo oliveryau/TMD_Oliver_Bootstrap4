@@ -246,7 +246,7 @@
             <div class="col-12 col-md-6">
                 <div class="form-group">
                     <label>Duration (In seconds) - Only for video files: </label>
-                    <asp:TextBox Class="form-control" ID="videoDurationTB" runat="server" />                        
+                    <asp:TextBox Class="form-control" ID="videoDurationTB" runat="server" AutoComplete="off" />                        
                 </div>
             </div>
 

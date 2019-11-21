@@ -13,7 +13,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <form runat="server">
         <div class="row">
-            <div class="col-lg-12">
+            <div class="col-12">
                 <h1 class="page-header">New User</h1>
             </div>
             <!-- /.col-lg-12 -->
@@ -63,7 +63,7 @@
                     <label>Name: </label>
                     <label style="color: red">*</label>
                     &nbsp;
-                    <asp:TextBox class="form-control" ID="tbName" placeholder="Enter name" runat="server"></asp:TextBox>&nbsp;
+                    <asp:TextBox class="form-control" ID="tbName" placeholder="Enter name" runat="server" AutoComplete="off"></asp:TextBox>&nbsp;
                     <asp:RequiredFieldValidator ID="rfvName" runat="server" ControlToValidate="tbName" Display="Dynamic" ErrorMessage="Please enter name" ForeColor="Red"></asp:RequiredFieldValidator>
                     <asp:RegularExpressionValidator ID="revName" runat="server" ControlToValidate="tbName" Display="Dynamic" ErrorMessage="Please enter a valid name" ValidationExpression="^[a-zA-Z\s]+$" ForeColor="Red"></asp:RegularExpressionValidator>                                            
                 </div>
@@ -73,7 +73,7 @@
                 <div class="form-group">
                     <label>E-mail: </label>
                     <label style="color: red">*</label>
-                    <asp:TextBox class="form-control" ID="tbEmail" placeholder="Enter email" runat="server"></asp:TextBox>
+                    <asp:TextBox class="form-control" ID="tbEmail" placeholder="Enter email" runat="server" AutoComplete="off"></asp:TextBox>
                     &nbsp;
                     <asp:RequiredFieldValidator ID="rfvEmail" runat="server" ControlToValidate="tbEmail" Display="Dynamic" ErrorMessage="Please enter email" ForeColor="Red"></asp:RequiredFieldValidator>
                     <asp:RegularExpressionValidator ID="revEmail" runat="server" ControlToValidate="tbEmail" Display="Dynamic" ErrorMessage="Please enter a valid email address" ValidationExpression="^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$" ForeColor="Red"></asp:RegularExpressionValidator>
@@ -86,7 +86,7 @@
                 <div class="form-group">
                     <label>Contact Number: </label>
                     <label style="color: red">*</label>
-                    <asp:TextBox class="form-control" ID="tbConNo" placeholder="Enter contact no." runat="server"></asp:TextBox>&nbsp;
+                    <asp:TextBox class="form-control" ID="tbConNo" placeholder="Enter contact no." runat="server" AutoComplete="off"></asp:TextBox>&nbsp;
                     <asp:RequiredFieldValidator ID="rfvConNo" runat="server" ControlToValidate="tbConNo" Display="Dynamic" ErrorMessage="Please enter contact number" ForeColor="Red"></asp:RequiredFieldValidator>
                     <asp:RegularExpressionValidator ID="revConNo" runat="server" ControlToValidate="tbConNo" Display="Dynamic" ErrorMessage="Please enter a valid contact number (8-digits starting with the number 8/9)" ValidationExpression="^[89]\d{7}$" ForeColor="Red"></asp:RegularExpressionValidator>
                 </div>

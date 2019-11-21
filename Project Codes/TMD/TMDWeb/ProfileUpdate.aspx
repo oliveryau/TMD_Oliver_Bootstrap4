@@ -57,7 +57,7 @@
                 <div class="form-group">
                     <label>Name: </label>
                     <label style="color: red">*</label>
-                <asp:TextBox class="form-control" ID="tbName" placeholder="Enter Name" runat="server"></asp:TextBox>&nbsp;
+                <asp:TextBox class="form-control" ID="tbName" placeholder="Enter Name" runat="server" autocomplete="off"></asp:TextBox>&nbsp;
                 <asp:RequiredFieldValidator ID="rfvName" runat="server" ControlToValidate="tbName" Display="Dynamic" ErrorMessage="Please enter name" ForeColor="Red"></asp:RequiredFieldValidator>
                 <asp:RegularExpressionValidator ID="revName" runat="server" ControlToValidate="tbName" Display="Dynamic" ErrorMessage="Please enter a valid name" ValidationExpression="^[a-zA-Z\s]+$" ForeColor="Red"></asp:RegularExpressionValidator>                        
                 </div>
@@ -67,7 +67,7 @@
                 <div class="form-group">
                     <label>Contact Number: </label>
                     <label style="color: red">*</label>
-                    <asp:TextBox class="form-control" ID="tbContact" placeholder="Enter Contact No." runat="server"></asp:TextBox>&nbsp;
+                    <asp:TextBox class="form-control" ID="tbContact" placeholder="Enter Contact No." runat="server" autocomplete="off"></asp:TextBox>&nbsp;
                     <asp:RequiredFieldValidator ID="rfvConNo" runat="server" ControlToValidate="tbContact" Display="Dynamic" ErrorMessage="Please enter contact number" ForeColor="Red"></asp:RequiredFieldValidator>
                     <asp:RegularExpressionValidator ID="revConNo" runat="server" ControlToValidate="tbContact" Display="Dynamic" ErrorMessage="Please enter a valid contact number (8 digit starting with the number 8/9)" ValidationExpression="^[89]\d{7}$" ForeColor="Red"></asp:RegularExpressionValidator>
                 </div>
@@ -85,7 +85,7 @@
                 <div class="form-group">
                     <label>Current Password: </label>
                     <label style="color: red">*</label>
-                    <asp:TextBox class="form-control" ID="CurrentPassword" placeholder="Enter Password" runat="server" TextMode="Password"></asp:TextBox>&nbsp;
+                    <asp:TextBox class="form-control" ID="CurrentPassword" placeholder="Enter Password" runat="server" TextMode="Password" AutoComplete="off"></asp:TextBox>&nbsp;
                     <asp:RequiredFieldValidator ID="rfvCurrPswd" runat="server" ControlToValidate="CurrentPassword" Display="Dynamic" ErrorMessage="Please enter current password" ForeColor="Red"></asp:RequiredFieldValidator>
                     <asp:RegularExpressionValidator ID="revCurrPswd" runat="server" ControlToValidate="CurrentPassword" Display="Dynamic" ErrorMessage="Please enter a valid password" ValidationExpression="^.{8,12}$" ForeColor="Red"></asp:RegularExpressionValidator>
                 </div>
@@ -97,7 +97,7 @@
                 <div class="form-group">
                     <label>New Password: </label>
                     <label style="color: red">*</label>
-                    <asp:TextBox class="form-control" ID="tbPswd" placeholder="Enter Password" runat="server" TextMode="Password"></asp:TextBox>&nbsp;
+                    <asp:TextBox class="form-control" ID="tbPswd" placeholder="Enter Password" runat="server" TextMode="Password" AutoComplete="off"></asp:TextBox>&nbsp;
                     <asp:RequiredFieldValidator ID="rfvPswd" runat="server" ControlToValidate="tbPswd" Display="Dynamic" ErrorMessage="Please enter new password" ForeColor="Red"></asp:RequiredFieldValidator>
                     <asp:RegularExpressionValidator ID="revPswd" runat="server" ControlToValidate="tbPswd" Display="Dynamic" ErrorMessage="Please enter a password with length of between 8-12 characters" ValidationExpression="^.{8,12}$" ForeColor="Red"></asp:RegularExpressionValidator>
                 </div>
@@ -107,7 +107,7 @@
                 <div class="form-group">
                     <label>Confirm New Password: </label>
                     <label style="color: red">*</label>
-                    <asp:TextBox class="form-control" ID="tbCPswd" placeholder="Confirm Password" runat="server" TextMode="Password"></asp:TextBox>&nbsp;
+                    <asp:TextBox class="form-control" ID="tbCPswd" placeholder="Confirm Password" runat="server" TextMode="Password" AutoComplete="off"></asp:TextBox>&nbsp;
                     <asp:RequiredFieldValidator ID="rfvCpswd" runat="server" ControlToValidate="tbCPswd" Display="Dynamic" ErrorMessage="Please confirm new password" ForeColor="Red"></asp:RequiredFieldValidator>
                 </div>
             </div>

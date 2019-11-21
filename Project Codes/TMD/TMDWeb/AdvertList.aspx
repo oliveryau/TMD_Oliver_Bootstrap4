@@ -235,7 +235,7 @@
             <div class="input-group custom-search-form">
                 <div style="float: left">
                     <p class="input-group">
-                    <asp:TextBox ID="txtSearch" class="form-control" runat="server" placeholder="Search..."></asp:TextBox>
+                    <asp:TextBox ID="txtSearch" class="form-control" runat="server" placeholder="Search..." AutoComplete="off"></asp:TextBox>
                     <%--<input type="submit" id="btSubmit" runat="server" />--%>
                     <span class="input-group-btn" >
                         <asp:LinkButton runat="server" class="btn btn-default" ID="btnRun" Text="<i class='fa fa-search'></i>" OnClick="btnRun_Click"/>                        

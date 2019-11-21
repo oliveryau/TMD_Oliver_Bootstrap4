@@ -141,16 +141,16 @@
         <div class="modal" id="forgotModal" role="dialog">
             <div class="modal-dialog" role="form">
                 <div class="modal-content">
-                    <div class="modal-header" style="background-color: #BFB7B6;">
+                    <div class="modal-header">
                         <h4 class="modal-title" style="color: #435058;">Forgot your password?</h4>
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
-                    <div class="modal-body" style="background-color: #BFB7B6;">
-                        <asp:TextBox class="form-control" ID="fpEmail" placeholder="Enter email" runat="server"></asp:TextBox>
+                    <div class="modal-body">
+                        <asp:TextBox class="form-control" ID="fpEmail" placeholder="Enter email" runat="server" autocomplete="off"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="forgotPwId" runat="server" ControlToValidate="fpEmail" ValidationGroup="fpInfo" CssClass="rfv" Display="Dynamic" ErrorMessage="Please enter your email" ForeColor="Red"></asp:RequiredFieldValidator>
                         <asp:RegularExpressionValidator ID="revFpEmail" runat="server" ControlToValidate="fpEmail" ValidationGroup="fpInfo" CssClass="rfv" Display="Dynamic" ErrorMessage="Please enter a valid email" ValidationExpression="^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$" ForeColor="Red"></asp:RegularExpressionValidator>
                     </div>
-                    <div class="modal-footer" style="background-color: #BFB7B6;">
+                    <div class="modal-footer">
                         <asp:Button ID="fpBtn" class="btn btn-primary col-3 ml-auto" runat="server" Text="Submit" OnClick="fp_onclick" ValidationGroup="fpInfo" style="color: #435058;"></asp:Button>
                     </div>
                 </div>
